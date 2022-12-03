@@ -1,0 +1,35 @@
+#Add the weight of the package here:
+weight = 
+
+#Ground shipping
+if weight <= 2:
+  ground_shipping_cost = weight * 1.5 + 20
+elif weight > 2 and weight <= 6:
+  ground_shipping_cost = weight * 3.0 + 20
+elif weight > 6 and weight <= 10:
+  ground_shipping_cost = weight * 4.0 + 20
+else:
+  ground_shipping_cost = weight * 10.0 + 20
+
+print("Ground Shipping Cost:")
+print(ground_shipping_cost)
+
+#Premium shipping
+premium_shipping_cost = 125
+
+print("Premium Shipping Cost:")
+print(premium_shipping_cost)
+
+#Drone shipping
+if weight <= 2:
+  drone_shipping_cost = weight * 4.5
+elif weight > 2 and weight <= 6:
+  drone_shipping_cost = weight * 9.0
+elif weight > 6 and weight <= 10:
+  drone_shipping_cost = weight * 12.0
+else:
+  drone_shipping_cost = weight * 14.25
+
+print('Drone Shipping Cost:')
+print(drone_shipping_cost)
+
